@@ -11,6 +11,7 @@ jobs:
     - run:
         name: Install Dependencies
         command: |
+          python3 -m venv venv
           make install
         
     - save_cache:
